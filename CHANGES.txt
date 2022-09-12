@@ -1,12 +1,12 @@
-lightweight tag e8bf210f6d6452491f03141553bbfa149f56d42b 8.0.2
+lightweight tag 02c996ab07f48ceb2f153da7901cdd5a00bfd7d7 8.0.3
 Author:	LANCESTRE <lancetre@intenebris.org>
-Date:	Mon Sep 5 23:04:24 2022 +0200
+Date:	Sun Sep 11 09:28:37 2022 +0200
 
-commit e8bf210f6d6452491f03141553bbfa149f56d42b
+commit 02c996ab07f48ceb2f153da7901cdd5a00bfd7d7
 Author: LANCESTRE <lancetre@intenebris.org>
-Date:   Mon Sep 5 23:04:24 2022 +0200
+Date:   Sun Sep 11 09:28:37 2022 +0200
 
     Update Spells.lua
     
-    Cooldown = 900 for SS
+    Add Haunt in the timer list
 
