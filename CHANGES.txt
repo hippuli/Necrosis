@@ -1,12 +1,12 @@
-lightweight tag 02c996ab07f48ceb2f153da7901cdd5a00bfd7d7 8.0.3
+lightweight tag 8f4f59971d6626fe1e2137c94a31e8ade1729908 8.0.4
 Author:	LANCESTRE <lancetre@intenebris.org>
-Date:	Sun Sep 11 09:28:37 2022 +0200
+Date:	Mon Sep 12 22:21:37 2022 +0200
 
-commit 02c996ab07f48ceb2f153da7901cdd5a00bfd7d7
+commit 8f4f59971d6626fe1e2137c94a31e8ade1729908
 Author: LANCESTRE <lancetre@intenebris.org>
-Date:   Sun Sep 11 09:28:37 2022 +0200
+Date:   Mon Sep 12 22:21:37 2022 +0200
 
-    Update Spells.lua
+    Menu Curse rewrite with option
     
-    Add Haunt in the timer list
+    https://www.curseforge.com/wow/addons/necrosis-tbc-classic/issues/11
 
