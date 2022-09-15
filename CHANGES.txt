@@ -1,12 +1,10 @@
-lightweight tag 8f4f59971d6626fe1e2137c94a31e8ade1729908 8.0.4
+lightweight tag e807b965f3e342af28b889ac7dd2ae28db52106a 8.0.4b
 Author:	LANCESTRE <lancetre@intenebris.org>
-Date:	Mon Sep 12 22:21:37 2022 +0200
+Date:	Tue Sep 13 17:07:43 2022 +0200
 
-commit 8f4f59971d6626fe1e2137c94a31e8ade1729908
+commit e807b965f3e342af28b889ac7dd2ae28db52106a
 Author: LANCESTRE <lancetre@intenebris.org>
-Date:   Mon Sep 12 22:21:37 2022 +0200
+Date:   Tue Sep 13 17:07:43 2022 +0200
 
-    Menu Curse rewrite with option
-    
-    https://www.curseforge.com/wow/addons/necrosis-tbc-classic/issues/11
+    Update Necrosis.toc
 
