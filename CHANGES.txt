@@ -1,12 +1,12 @@
-lightweight tag c9804cbc0e45ac9e17056fbdcb2062e20f60facc 8.0.5
+lightweight tag d904c7b1a09f25dbe6ac261ca6139e6ccbda0931 8.0.5b
 Author:	LANCESTRE <lancetre@intenebris.org>
-Date:	Sat Sep 17 19:46:53 2022 +0200
+Date:	Mon Oct 3 06:37:05 2022 +0200
 
-commit c9804cbc0e45ac9e17056fbdcb2062e20f60facc
+commit d904c7b1a09f25dbe6ac261ca6139e6ccbda0931
 Author: LANCESTRE <lancetre@intenebris.org>
-Date:   Sat Sep 17 19:46:53 2022 +0200
+Date:   Mon Oct 3 06:37:05 2022 +0200
 
-    Soulshards rewrite
+    lua err
     
-    Soulshards rewrite
+    fix Attributes.lua:864: attempt to concatenate
 
