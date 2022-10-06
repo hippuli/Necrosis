@@ -1,12 +1,12 @@
-lightweight tag d904c7b1a09f25dbe6ac261ca6139e6ccbda0931 8.0.5b
+lightweight tag afba0baf798782f3bacaf7bac27549a5fc58a9aa 8.0.6
 Author:	LANCESTRE <lancetre@intenebris.org>
-Date:	Mon Oct 3 06:37:05 2022 +0200
+Date:	Thu Oct 6 04:39:21 2022 +0200
 
-commit d904c7b1a09f25dbe6ac261ca6139e6ccbda0931
+commit afba0baf798782f3bacaf7bac27549a5fc58a9aa
 Author: LANCESTRE <lancetre@intenebris.org>
-Date:   Mon Oct 3 06:37:05 2022 +0200
+Date:   Thu Oct 6 04:39:21 2022 +0200
 
-    lua err
+    Update Spells.lua
     
-    fix Attributes.lua:864: attempt to concatenate
+     Ritual of Souls R2
 
