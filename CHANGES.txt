@@ -1,12 +1,12 @@
-lightweight tag afba0baf798782f3bacaf7bac27549a5fc58a9aa 8.0.6
+lightweight tag a94a80736eeb81d7d3abd3e8ac1d9a0e5dc0c906 8.0.7
 Author:	LANCESTRE <lancetre@intenebris.org>
-Date:	Thu Oct 6 04:39:21 2022 +0200
+Date:	Fri Oct 14 00:03:50 2022 +0200
 
-commit afba0baf798782f3bacaf7bac27549a5fc58a9aa
+commit a94a80736eeb81d7d3abd3e8ac1d9a0e5dc0c906
 Author: LANCESTRE <lancetre@intenebris.org>
-Date:   Thu Oct 6 04:39:21 2022 +0200
+Date:   Fri Oct 14 00:03:50 2022 +0200
 
-    Update Spells.lua
+    Moltencore decimation
     
-     Ritual of Souls R2
+    Moltencore decimation trigger
 
