@@ -1,12 +1,12 @@
-lightweight tag a94a80736eeb81d7d3abd3e8ac1d9a0e5dc0c906 8.0.7
+lightweight tag ecfadc0f70e1c7780923681d183c5e06301d6c04 8.0.8
 Author:	LANCESTRE <lancetre@intenebris.org>
-Date:	Fri Oct 14 00:03:50 2022 +0200
+Date:	Mon Oct 17 23:10:01 2022 +0200
 
-commit a94a80736eeb81d7d3abd3e8ac1d9a0e5dc0c906
+commit ecfadc0f70e1c7780923681d183c5e06301d6c04
 Author: LANCESTRE <lancetre@intenebris.org>
-Date:   Fri Oct 14 00:03:50 2022 +0200
+Date:   Mon Oct 17 23:10:01 2022 +0200
 
-    Moltencore decimation
+    Motencore
     
-    Moltencore decimation trigger
+    proc
 
