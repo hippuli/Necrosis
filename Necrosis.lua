@@ -146,6 +146,7 @@ Local.DefaultConfig = {
 	DestroyShardwithsphere = true,
 	ShadowTranceScale = 100,
 	NecrosisButtonScale = 90,
+	NecroisButtonRadius = 1,
 	NecrosisColor = "Rose",
 	Sound = true,
 	SpellTimerPos = 1,
@@ -809,7 +810,7 @@ end
 -- Event : UNIT_PET
 -- Allows the servo to be timed, as well as to prevent for servo breaks || Permet de timer les asservissements, ainsi que de prévenir pour les ruptures d'asservissement
 -- Also change the name of the pet to the replacement of it || Change également le nom du pet au remplacement de celui-ci
-local function ChangeDemon()
+function Necrosis:ChangeDemon()
 	if Necrosis.IsSpellKnown("enslave") then -- can enslave a demon
 		-- If the new demon is a slave demon, we put a 5 minute timer || Si le nouveau démon est un démon asservi, on place un timer de 5 minutes
 		if UnitHasEffect("pet", Necrosis.GetSpellName("enslave")) then 
@@ -900,7 +901,7 @@ local function SetupSpells(reason)
 		on a reload / crash / other reason.
 		The event UNIT_PET is triggered at init / reload IF a pet is out
 	--]]
-	ChangeDemon() 
+	Necrosis:ChangeDemon() 
 end
 
 --[[ SetupBuffTimers
@@ -1439,7 +1440,7 @@ _G["DEFAULT_CHAT_FRAME"]:AddMessage("UNIT_SPELLCAST_SENT - set target "
 
 	-- When the warlock changes demon || Quand le démoniste change de démon
 	elseif (event == "UNIT_PET" and arg1 == "player") then
-		ChangeDemon()
+		Necrosis:ChangeDemon()
 
 	-- ============= COMBAT_LOG_EVENT_UNFILTERED
 	-- Reading the combat log || Lecture du journal de combat
@@ -2577,22 +2578,46 @@ end
 
 -- Display or Hide buttons depending on spell availability || Affiche ou masque les boutons de sort à chaque nouveau sort appris
 function Necrosis:ButtonSetup()
+	local NBRScale, rayondebase ,rayon , dist
+	
+-- (Min)50 to 100 
+if  NecrosisConfig.NecrosisButtonScale <= 100 then
 
-	local NBRScale = (100 + (NecrosisConfig.NecrosisButtonScale - 85)) / 100
-	local dist = 35 * NBRScale
-	dist = dist
-	if NecrosisConfig.NecrosisButtonScale <= 100 then
 		NBRScale = 1.1
 		dist = 40 * NBRScale
-	end
+end	
+--  100 to 150
+if NecrosisConfig.NecrosisButtonScale < 150 and NecrosisConfig.NecrosisButtonScale > 100 then
+		 NBRScale = (100 + (NecrosisConfig.NecrosisButtonScale - 85)) / 100
+		 rayondebase = 8
+		 rayon = rayondebase * (NecrosisConfig.NecrosisButtonScale/100)
+		 dist = 35 * NBRScale * 0.85
+		dist = dist - ((rayon-rayondebase)) 
+end
+
+-- 160 to 200 (max)		
+if NecrosisConfig.NecrosisButtonScale >= 150 then
+		 NBRScale = (100 + (NecrosisConfig.NecrosisButtonScale - 85)) / 100
+		 rayondebase = 13
+		 rayon = rayondebase * (NecrosisConfig.NecrosisButtonScale/100)
+		 dist = 35 * NBRScale * 0.85
+		dist = dist - ((rayon-rayondebase))
+end
+	
+
+
+		
+	
+	--print (dist,NBRScale,NecrosisConfig.NecrosisButtonScale)
 
 ---[==[
 	if Necrosis.Debug.buttons then
 		_G["DEFAULT_CHAT_FRAME"]:AddMessage("ButtonSetup === Begin"
 		)
 	end
+	
 	local fm = Necrosis.Warlock_Buttons.main.f
-	local indexScale = -36
+	local indexScale = - 36
 	
 	for index=1, #Necrosis.Warlock_Lists.on_sphere, 1 do
 		local v = Necrosis.Warlock_Lists.on_sphere[index]
@@ -2610,9 +2635,9 @@ function Necrosis:ButtonSetup()
 		--if (GetSpellInfo(GetSpellInfo(v.high_of))
 		
 		if (Necrosis.IsSpellKnown(v.high_of) 	-- in spell book
-		or v.menu                           	-- or on menu of spells
-		or v.item)                           	-- or item to use
-		and (sp and sp > 0) -- and requested
+			or v.menu                           	-- or on menu of spells
+			or v.item)                           	-- or item to use
+			and (sp and sp > 0) 					-- and requested
 		then
 		
 			if not f then
@@ -2626,8 +2651,8 @@ function Necrosis:ButtonSetup()
 			if NecrosisConfig.NecrosisLockServ then
 				f:SetPoint(
 					"CENTER", fm, "CENTER",
-					((dist) * cos(NecrosisConfig.NecrosisAngle - indexScale)),
-					((dist) * sin(NecrosisConfig.NecrosisAngle - indexScale))
+					((dist) * cos(NecrosisConfig.NecrosisAngle - indexScale)),-- Offset X
+					((dist) * sin(NecrosisConfig.NecrosisAngle - indexScale)) -- Offset Y
 				)
 				indexScale = indexScale + 36
 			else

@@ -1,12 +1,10 @@
-lightweight tag 028646838372fbbb5f350cf0772c61e3c35b95e4 8.0.9
+lightweight tag 4418cb1740c30c4d2b4aa23100c591d28d938bdc 8.1.1
 Author:	LANCESTRE <lancetre@intenebris.org>
-Date:	Thu Oct 20 14:40:40 2022 +0200
+Date:	Mon Nov 7 21:46:30 2022 +0100
 
-commit 028646838372fbbb5f350cf0772c61e3c35b95e4
+commit 4418cb1740c30c4d2b4aa23100c591d28d938bdc
 Author: LANCESTRE <lancetre@intenebris.org>
-Date:   Thu Oct 20 14:40:40 2022 +0200
+Date:   Mon Nov 7 21:46:30 2022 +0100
 
     Update Necrosis.lua
-    
-    Count Charges in Spell StoneToolTip
 

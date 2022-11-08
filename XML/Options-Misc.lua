@@ -36,7 +36,7 @@ function Necrosis:SetMiscConfig()
 		frame:SetHeight(24)
 		frame:Show()
 		frame:ClearAllPoints()
-		frame:SetPoint("LEFT", NecrosisMiscConfig, "BOTTOMLEFT", 25, 360)
+		frame:SetPoint("LEFT", NecrosisMiscConfig, "BOTTOMLEFT", 40, 360)
 
 		frame:SetScript("OnClick", function(self)
 			NecrosisConfig.SoulshardSort = self:GetChecked()
@@ -65,7 +65,7 @@ function Necrosis:SetMiscConfig()
 		Glow:SetWordWrap(true)
 		Glow:Show()
 		Glow:ClearAllPoints()
-		Glow:SetPoint("LEFT", frame, "TOPLEFT" , 25, 25 )
+		Glow:SetPoint("LEFT", frame, "TOPLEFT" , 40, 25 )
 		Glow:SetTextColor(1, 0.5, 0)
 		Glow:SetText("Unfortunately with TBC, Blizzard has decided to remove    the ability for addons to automatically delete shards.    "..
 		"auto-sorting after combat is no longer supported.  "..
@@ -150,7 +150,7 @@ function Necrosis:SetMiscConfig()
 		frame:SetHeight(24)
 		frame:Show()
 		frame:ClearAllPoints()
-		frame:SetPoint("LEFT", NecrosisMiscConfig, "BOTTOMLEFT", 25, 280)
+		frame:SetPoint("LEFT", NecrosisMiscConfig, "BOTTOMLEFT", 40, 280)
 
 		frame:SetScript("OnClick", function(self)
 			NecrosisConfig.DestroyShard = self:GetChecked()
@@ -197,56 +197,7 @@ function Necrosis:SetMiscConfig()
 		FontString:SetFont("Fonts\\ARIALN.TTF", 12)
 		FontString:SetTextColor(1, 1, 1)
 --]]
-		------------------------------------
-			-- Verrouillage de Necrosis
-		-------------------------------------
 		
-		frame = CreateFrame("CheckButton", "NecrosisLock", NecrosisMiscConfig, "UICheckButtonTemplate")
-		frame:EnableMouse(true)
-		frame:SetWidth(24)
-		frame:SetHeight(24)
-		frame:Show()
-		frame:ClearAllPoints()
-		frame:SetPoint("LEFT", NecrosisMiscConfig, "BOTTOMLEFT", 25, 225)
-
-		frame:SetScript("OnClick", function(self)
-			local ft = _G[Necrosis.Warlock_Buttons.trance.f]
-			local fb = _G[Necrosis.Warlock_Buttons.backlash.f]
-			local fa = _G[Necrosis.Warlock_Buttons.anti_fear.f]
-			local fe = _G[Necrosis.Warlock_Buttons.elemental.f]
-			local fd = _G[Necrosis.Warlock_Buttons.demon.f]	
-			
-			if (self:GetChecked()) then
-				Necrosis:NoDrag()
-				NecrosisButton:RegisterForDrag("")
-				NecrosisSpellTimerButton:RegisterForDrag("")
-				ft:RegisterForDrag("")
-				fb:RegisterForDrag("")
-				fa:RegisterForDrag("")
-				fe:RegisterForDrag("")
-				fd:RegisterForDrag("")			
-				NecrosisConfig.NoDragAll = true
-			else
-				if not NecrosisConfig.NecrosisLockServ then
-					Necrosis:Drag()
-				end
-				NecrosisButton:RegisterForDrag("LeftButton")
-				NecrosisSpellTimerButton:RegisterForDrag("LeftButton")
-				ft:RegisterForDrag("LeftButton")
-				fb:RegisterForDrag("LeftButton")
-				fa:RegisterForDrag("LeftButton")
-				fe:RegisterForDrag("LeftButton")
-				fd:RegisterForDrag("LeftButton")				
-				NecrosisConfig.NoDragAll = false
-			end
-		end)
-
-		FontString = frame:CreateFontString(nil, nil, "GameFontNormalSmall")
-		FontString:Show()
-		FontString:ClearAllPoints()
-		FontString:SetPoint("LEFT", frame, "RIGHT", 5, 1)
-		FontString:SetTextColor(1, 1, 1)
-		frame:SetFontString(FontString)
 		
 		--------------------------------------------
 				-- Affichage des boutons cachés
@@ -257,7 +208,7 @@ function Necrosis:SetMiscConfig()
 		frame:SetHeight(24)
 		frame:Show()
 		frame:ClearAllPoints()
-		frame:SetPoint("LEFT", NecrosisMiscConfig, "BOTTOMLEFT", 25, 200)
+		frame:SetPoint("LEFT", NecrosisMiscConfig, "BOTTOMLEFT", 40, 200)
 
 		frame:SetScript("OnClick", function(self)
 			if (self:GetChecked()) then
@@ -398,14 +349,14 @@ function Necrosis:SetMiscConfig()
 		NecrosisDestroyCount:SetValue(32)
 	end
 
-	NecrosisLock:SetChecked(NecrosisConfig.NoDragAll)
+	
 	NecrosisHiddenSize:SetValue(NecrosisConfig.ShadowTranceScale)
 
 	NecrosisMoveShard:SetText(self.Config.Misc["Deplace les fragments"])
 	--NecrosisDestroyShardBag:SetText(self.Config.Misc["Detruit les fragments si le sac plein"])
 	NecrosisShardBagText:SetText(self.Config.Misc["Choix du sac contenant les fragments"])
 	NecrosisDestroyShard:SetText(self.Config.Misc["Nombre maximum de fragments a conserver"])
-	NecrosisLock:SetText(self.Config.Misc["Verrouiller Necrosis sur l'interface"])
+	
 	NecrosisHiddenButtons:SetText(self.Config.Misc["Afficher les boutons caches"])
 	NecrosisHiddenSizeText:SetText(self.Config.Misc["Taille des boutons caches"])
 
