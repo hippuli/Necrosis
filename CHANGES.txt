@@ -1,10 +1,10 @@
-lightweight tag 4418cb1740c30c4d2b4aa23100c591d28d938bdc 8.1.1
-Author:	LANCESTRE <lancetre@intenebris.org>
-Date:	Mon Nov 7 21:46:30 2022 +0100
+lightweight tag 4fa3dd42ea2d6b25785a6a396a1142e34fc38f48 8.1.2
+Author:	GitHub <noreply@github.com>
+Date:	Thu Nov 10 06:50:43 2022 +0100
 
-commit 4418cb1740c30c4d2b4aa23100c591d28d938bdc
-Author: LANCESTRE <lancetre@intenebris.org>
-Date:   Mon Nov 7 21:46:30 2022 +0100
+commit c72ca825cdc448db8ba89fdc7ca49e135d16a75b
+Author: Geir Haugom <haugom@gmail.com>
+Date:   Wed Nov 9 22:04:08 2022 +0100
 
-    Update Necrosis.lua
+    fix: Add rank 3 to Curse of Doom
 
