@@ -8,7 +8,7 @@
 ## Notes: Warlock UI & Shard Management
 ## Notes-frFR: Gestion graphique des shards, interface Démoniste, ban , asservir 
 ## Notes-ruRU: Менеджер заклинаний, камней и демонов для чернокнижника.
-## Version: 8.1.3
+## Version: 8.1.4
 ## Website: https://github.com/CKNOEP/Necrosis
 ## DefaultState: Enabled
 ## X-Original-Author: Lomig,lädygaga - sulfuron EUR - lancestre
@@ -77,6 +77,6 @@ XML\Options-Buttons.lua
 XML\Options-Menus.lua
 XML\Options-Timers.lua
 XML\Options-Misc.lua
-
+XML\Options-Overlay.lua
 Necrosis.lua
 XML\XML.lua
