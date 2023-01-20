@@ -1,12 +1,12 @@
-lightweight tag 6e3d56b24970eb6a0da394a30dcffe6d9ca6c6a8 8.1.4
+lightweight tag ea5dfce88b7cbfaf9f7bfb4bbdcc934fdc04a419 8.1.7
 Author:	LANCESTRE <lancetre@intenebris.org>
-Date:	Tue Dec 6 15:49:14 2022 +0100
+Date:	Thu Jan 19 18:33:23 2023 +0100
 
-commit 6e3d56b24970eb6a0da394a30dcffe6d9ca6c6a8
+commit ea5dfce88b7cbfaf9f7bfb4bbdcc934fdc04a419
 Author: LANCESTRE <lancetre@intenebris.org>
-Date:   Tue Dec 6 15:49:14 2022 +0100
+Date:   Thu Jan 19 18:33:23 2023 +0100
 
-    LibUIDropDownMenu
+    Update Necrosis.lua
     
-    Upgrade LibUIDropDownMenu
+    fix C_Container error
 
