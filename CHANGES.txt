@@ -1,12 +1,12 @@
-lightweight tag ea5dfce88b7cbfaf9f7bfb4bbdcc934fdc04a419 8.1.7
+lightweight tag 1d0d91bfe54748164ef21867523bc0802e1fe50c 8.1.8
 Author:	LANCESTRE <lancetre@intenebris.org>
-Date:	Thu Jan 19 18:33:23 2023 +0100
+Date:	Sat Feb 18 18:10:33 2023 +0100
 
-commit ea5dfce88b7cbfaf9f7bfb4bbdcc934fdc04a419
+commit 1d0d91bfe54748164ef21867523bc0802e1fe50c
 Author: LANCESTRE <lancetre@intenebris.org>
-Date:   Thu Jan 19 18:33:23 2023 +0100
+Date:   Sat Feb 18 18:10:33 2023 +0100
 
-    Update Necrosis.lua
+    Fix taint message secure function call
     
-    fix C_Container error
+    Fix taint message secure function call
 
