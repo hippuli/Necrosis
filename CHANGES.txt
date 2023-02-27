@@ -1,12 +1,10 @@
-lightweight tag 1d0d91bfe54748164ef21867523bc0802e1fe50c 8.1.8
+lightweight tag 365bc33e366c241c1fa950aa2d22cec23ed6436d 8.1.10
 Author:	LANCESTRE <lancetre@intenebris.org>
-Date:	Sat Feb 18 18:10:33 2023 +0100
+Date:	Mon Feb 27 13:17:51 2023 +0100
 
-commit 1d0d91bfe54748164ef21867523bc0802e1fe50c
+commit 365bc33e366c241c1fa950aa2d22cec23ed6436d
 Author: LANCESTRE <lancetre@intenebris.org>
-Date:   Sat Feb 18 18:10:33 2023 +0100
+Date:   Mon Feb 27 13:17:51 2023 +0100
 
-    Fix taint message secure function call
-    
-    Fix taint message secure function call
+    AFK option
 
